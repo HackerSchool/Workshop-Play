@@ -1,0 +1,9 @@
+@* user Template File *@
+@(user: User)
+
+@import models.User
+
+@main("Show User") {
+	<h1>@user.getName()</h1>
+	<h2>Birthday: @user.getBirthday().toString()</h2>
+}
